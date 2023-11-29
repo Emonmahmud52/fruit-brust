@@ -3,17 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Brust</title>
-</head>
-<body>
-    <header>
+    <title>Fruit Burst</title>
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
 
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Noto sans Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font awesome link -->
+    <script src="https://kit.fontawesome.com/a3870d6015.js" crossorigin="anonymous"></script>
+
+    <!-- custom classes -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'primary-bg': '#F85559',
+                'primary-text':'#F85559',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-noto">
+    <header class="container mx-auto px-1">
+        <!-- navbar Starts -->
+        <nav class="mt-5">
+          <div class="navbar md:bg-primary-bg md:text-white lg:bg-primary-bg lg:text-white rounded-full">
+            <!-- navbar-start -->
+            <div class="navbar-start">
+              <!-- Logo -->
+              <div class="flex lg:hidden">
+                <a class="btn btn-ghost text-2xl font-bold">
+                  <img src="images/logo.png" alt="" class="w-10">
+                  <span>Fruit-Burst</span>
+                </a>
+              </div>
+              <!-- menu -->
+              <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-base ">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- navbar center -->
+            <div class="navbar-center">
+              <!-- Logo -->
+              <div class="hidden lg:flex">
+                <a class="btn btn-ghost text-2xl font-bold">
+                  <img src="images/logo.png" alt="" class="w-10">
+                  <span>Fruit-Burst</span>
+                </a>
+              </div>
+              <!-- search bar -->
+              <div class="hidden md:flex lg:hidden relative">
+                <div class="form-control text-black">
+                  <input type="search" placeholder="Search" class="rounded-full px-3 py-2 w-24 outline-none md:w-auto" />
+                  <div class="absolute right-5 top-2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- navbar End -->
+            <div class="navbar-end">
+              <!-- search bar -->
+              <div class="hidden lg:flex relative">
+                <div class="form-control text-black">
+                  <input type="search" placeholder="Search" class="rounded-full px-3 py-2 w-24 outline-none md:w-auto" />
+                  <div class="absolute right-5 top-2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <!-- dropdown menu -->
+              <div class="dropdown dropdown-bottom dropdown-end flex lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </div>
+                <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 text-black rounded-box w-36">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+              
+        </nav>
+        <!-- navbar End -->
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
